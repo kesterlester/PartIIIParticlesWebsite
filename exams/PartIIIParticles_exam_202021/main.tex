@@ -1,0 +1,97 @@
+%\documentclass{article}
+\documentclass{NSTExam}
+\showanswerstrue
+\noversion
+
+%\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usepackage[compat=1.0.0]{tikz-feynman}
+%\usepackage{tikz-feynman}
+\usepackage{hyperref}
+
+
+\newcommand\fra{\frac{|\vec p|}{E+m}}
+\newcommand\expi{e^{i\phi}}
+
+\newcommand\hide[1]{{}}
+
+
+\newcommand\alig[1]{{\begin{align}#1\end{align}}}
+\newcommand\com[2]{{
+\left[#1,#2\right]
+}}
+\newcommand\anticom[2]{{
+\left\{#1,#2\right\}
+}}
+\newcommand\unit{
+\mathbbm{1}
+}
+\newcommand\matTwoTwo[4]{
+\left(\begin{array}{cc}
+#1 & #2 \\ #3 & #4
+\end{array}\right)
+}
+\newcommand\vecTwo[2]{
+\left(\begin{array}{c}
+#1 \\ #2 
+\end{array}\right)
+}
+\newcommand\vecFour[4]{
+\left(\begin{array}{c}
+#1 \\ #2 \\ #3 \\ #4 
+\end{array}\right)
+}
+
+%\title{Notes}
+%\author{kesterlester }
+%\date{November 2020}
+
+\begin{document}
+
+\tripos{NATURAL SCIENCES TRIPOS: %\qquad 
+Part III Physics} 
+%\tripos{NATURAL SCIENCES TRIPOS:\qquad Part III Astrophysics} 
+\tripos{MASTER OF ADVANCED STUDY IN PHYSICS} 
+%\tripos{{\color{red}[Are there too many or too few triposes and courses listed above?]}}
+\date{Monday 18th January 2021 \qquad 10:00 to 12:00} % TIME ADAPTED LAST MINUTE FOR CORONAVIRUS REASONS
+%\date{Tuesday 19th January 2021 \qquad 14:00 to 16:00} % ORIGINAL DATE NAND TIEM
+\paper{MAJOR TOPICS}
+\paper{Paper 1/PP (Particle Physics)}
+\begin{rubric}Answer \textbf{two} questions only.  The approximate number of marks allocated to each part of a question is indicated in the right-hand margin where appropriate. The paper has content on five sides, including this one, and is accompanied by a book giving values of constants and containing mathematical formulae which you may quote without proof.
+
+You should use a \textbf{separate Answer Book} for each question.
+\end{rubric}
+\requirements{2x20-page answer books\\Rough workpad}{Mathematical Formulae Handbook\\Approved calculator allowed} \warning
+
+
+%\newpage
+%\thispagestyle{plain} % empty
+%\mbox{}
+
+\clearpage
+
+\vspace*{1cm}
+%\noindent\textbf{The following information may be used when answering any question:}\vspace{0.5cm}
+\input{hints}
+\clearpage
+
+\begin{questions}
+\input{question_spinless}
+\vspace{1cm}
+%\clearpage
+\input{question_bogus_boson}
+\clearpage
+\input{question_dirac}
+
+\end{questions}
+
+
+\endofpaper
+\end{document}
+
+

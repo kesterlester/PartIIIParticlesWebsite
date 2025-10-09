@@ -1,0 +1,681 @@
+
+\question 
+
+The second handout of this year's lecture course derived many properties of spinors and the Dirac equation assuming the usual `$3D$' Minkowski spacetime having one time and three space dimensions.  
+Which of those properties would remain the same, and which would change (and how) assuming instead a `$2D$' spacetime having two space dimensions in addition to time?  \marks{30}
+
+\vspace{5mm}
+
+Credit will be given for the quality of the arguments which relate specifically to the $2D$ case, and the degree to which they convey to the marker the sense that the candidate understands the physics and concepts underlying the Dirac equation, spinors and fermions.  No credit will be given for merely reporting what happens in $3D$, though comparisons between $2D$ and $3D$ are encouraged if they help to explain important features of the $2D$ spinors.
+
+\vspace{5mm}
+
+Candidates may wish to structure an answer around some of the following questions, though no candidate is required to give answers to all of them, and no candidate is forbidden from discussing other questions which they feel are relevant:
+\begin{enumerate}
+\item\ 
+What are the number, dimensions and required commutation or anticommutation relations of the smallest  $\alpha$ and $\beta$ matrices that a $2D$ Dirac Hamiltonian should use?
+\item\ 
+Does it remain sensible to create $\gamma$ matrices from $\alpha$ and $\beta$ matrices, and if so in what way?
+\item\ 
+Does the Dirac equation take a new form in $2D$~?
+\item\ 
+Does it remain beneficial to create $v$-spinors in addition to $u$-spinors?
+\item\ 
+Does the $2D$ theory predict both particles and anti-particles?
+\item\ 
+Do states still carry intrinsic spin angular momentum?
+\item\ 
+What explicit form (or forms) might a $2D$ spinor  take for a particle of mass $m$ having energy $E$ and momentum $(p_x,p_y)$ within the spatial two-space?   
+\item\ 
+Certain $3D$-spinor wave functions change sign when subjected to $2\pi$ rotations about certain axes. Is there anything analogous  for spinors in $2D$~? 
+\end{enumerate}
+
+
+
+\answer
+
+%Will the students find \url{http://www.rhysdavies.info/physics_page/resources/notes/spinors.pdf} after googling `spinors in two dimensions' as I did?
+The Dirac Hamiltonian would still start of being formulated as\alig{
+H = \vec \alpha\cdot\vec p + \beta m }giving\alig{
+H^2 
+&= (\vec \alpha\cdot\vec p + \beta m)(\vec \alpha\cdot\vec p + \beta m)
+\\
+&= 
+\alpha_x \alpha_x p_x^2
++\alpha_y \alpha_y p_y^2
++\beta^2 m^2\\
+&\qquad
++p_x p_y \left(
+\alpha_x \alpha_y
++
+\alpha_y \alpha_x 
+\right)
++m p_x (\beta \alpha_x + \alpha_x \beta) 
++m p_y (\beta \alpha_y + \alpha_y \beta) 
+}yet we desire:
+\alig{
+H^2=p_x^2+p_y^2+m^2
+}so need
+\alig{
+\anticom {\alpha_x} {\alpha_y} = \anticom {\alpha_x} {\beta} = \anticom {\alpha_y} {\beta} &= 0\\
+\anticom {\alpha_x} {\alpha_x} = \anticom {\alpha_y} {\alpha_y} = \anticom {\beta} {\beta} &= 2 
+}Can't do above with real or complex numbers since we evidently need non-zero quantities which can anticommute with each other.
+But we can use 2x2 matrices, indeed the usual Pauli matrices $\sigma_1$, $\sigma_2$ and $\sigma_3$ would suffice since they each square to $\unit_{2\times 2}$ as well as satisfying
+\alig{
+\sigma_1 \sigma_2 &= +i \sigma_3\qquad\text{(and cyclic perms)},
+\\
+\sigma_2 \sigma_1 &= -i \sigma_3\qquad\text{(and cyclic perms),}
+}
+and so (for example)
+\alig{
+\anticom{\sigma_1}{\sigma_2}
+&=
+\sigma_1 \sigma_2 + \sigma_2 \sigma_1
+\\
+&=
+i \sigma_3 -i \sigma_3
+\\
+&=0.
+}
+Mostly we can avoid using any specific representation ... but for those cases where a particular representation is unavoidable it may be sensible to use:
+\alig{
+\alpha_x=\sigma_1&=
+\matTwoTwo
+0 1 1 0
+,\\
+\alpha_y=\sigma_2&=
+\matTwoTwo
+0  {-i} i  0,\\
+\beta=\sigma_3&=
+\matTwoTwo
+1  0 0  {-1}
+}in which $\beta$ is chosen to be diagonal to match the Pauli-Dirac convention we used in lectures.
+
+If we did use the above representation, then our Dirac Hamiltonian would take the form
+\alig{
+H &= \matTwoTwo 
+{m} {p_x-i p_y} 
+{p_x+i p_y} {-m}.
+}
+Defining
+\alig{
+\gamma^0 &= \beta,\\
+\gamma^1 &= \beta \alpha_x,\\
+\gamma^2 &= \beta \alpha_y
+}%
+we note that 
+\alig{
+\hat H \psi &= i \partial_t \psi
+}%
+implies
+\alig{
+0 
+&= i \partial_t \psi - \hat H \psi
+\\
+&= \left(i \partial_t  - \vec \alpha \cdot \vec {\hat  p} - \beta m \right)\psi
+\\
+&= \left(i \partial_t  + i \vec \alpha \cdot \vec \partial - \beta m \right)\psi
+\\
+&= \beta \left(i \partial_t  + i \vec \alpha \cdot \vec \partial - \beta m \right)\psi
+\\
+&=  \left(i \gamma^0\partial_t  + i \vec \gamma \cdot \vec \partial - \beta^2 m \right)\psi
+\\
+&=  \left(i \gamma^\mu\partial_\mu - m \right)\psi
+}%
+in just the same way as in $1+3$ space time dimensions.  In other words, the Dirac equation doesn't look any different notationally, even though it contains one fewer gamma matrix.
+
+[BEGIN ASIDE:
+
+In our rep
+\alig{
+\gamma^0 &= \sigma_3 = \matTwoTwo 1 0 0  {-1}=(\gamma^0)^*,\label{eq:conjourgam0}\\
+\gamma^1 &= \sigma_3 \sigma_1 = i \sigma_2 = \matTwoTwo 0 1
+{-1} 0 = (\gamma^1)^*,\label{eq:conjourgam1}\\
+\gamma^2 &= \sigma_3 \sigma_2 = i \sigma_1 = \matTwoTwo 0 i i 0 = -(\gamma^2)^*.\label{eq:conjourgam2}
+}%
+
+END ASIDE]
+
+For plane wave solutions:
+\alig{
+\psi_u = u e^{-i p_\mu x^\mu}\qquad\text{and}\qquad\psi_v = v e^{+i p_\mu x^\mu}
+}%
+we have therefore
+\alig{
+\left(i \gamma^\mu (-i)p_\mu - m \right)u &= 0, \qquad\text{and}\\
+\left(i \gamma^\mu (+i)p_\mu - m \right)v &= 0
+}%
+i.e.~
+\alig{
+\left(\gamma^\mu p_\mu - m \right)u &= 0,\qquad\text{and}\\
+\left(\gamma^\mu p_\mu + m \right)v &= 0
+}%
+which are likewise unchanged from the usual forms.
+Going slightly back on ourselves:
+\alig{
+\beta\left(\gamma^\mu p_\mu - m \right)u &= 0,\qquad\text{and}\\
+\beta\left(\gamma^\mu p_\mu + m \right)v &= 0
+}%
+implies
+\alig{
+\left(
+ E 
+-\alpha_x p_x 
+-\alpha_y p_y  
+- \beta m \right)u &= 0,\qquad\text{and}\\
+\left(
+ E 
+-\alpha_x p_x 
+-\alpha_y p_y  
++ \beta m \right)v &= 0.
+}%
+which can be written as 
+\alig{
+(E-H_{\vec p})u&=0,\qquad\text{and}\label{eq:eu}\\
+(E+H_{-\vec p})v&=0\label{eq:ev}
+}%
+in which the subscripts indicate whether to use the `normal' $\vec p$ or its negated version in the Hamiltonian.
+Considering just the $u$ version of the two equations above:
+\alig{
+0&=(H_{\vec p}-E)u
+\\
+&= \matTwoTwo 
+{-E+m} {p_x-i p_y} 
+{p_x+i p_y} {-E-m} 
+\vecTwo {u_1}{u_2}
+}%
+and so
+\alig{
+(-E+m) u_1 + (p_x-i p_y) u_2 = 0\label{eq:worstuform}
+}%
+and so
+\alig{
+u \propto \vecTwo {p_x - i p_y} {E-m}.
+}%
+Alternatively, we could have written
+\alig{
+(p_x+i p_y)u_1-(E+m)u_2=0
+}%
+which would have lead to
+\alig{
+u &\propto \vecTwo {E+m} {p_x+i p_y}.\label{eq:bestuform}
+}%
+
+Note: The above two kinds of $u$ are equivalent since 
+\alig{
+\frac{E+m}{p_x-i p_y}\vecTwo {p_x - i p_y} {E-m}
+&=
+\vecTwo {E+m} {\frac{(E+m)(E-m)}{p_x-i p_y}}
+\\
+&=
+\vecTwo {E+m} {\frac{(E^2-m^2)(p_x+i p_y)}{(p_x-i p_y)(p_x+i p_y)}}
+\\
+&=
+\vecTwo {E+m} {\frac{(E^2-m^2)(p_x+i p_y)}{p_x^2+p_y^2}}
+\\
+&=
+\vecTwo {E+m} {\frac{(E^2-m^2)(p_x+i p_y)}{E^2-m^2}}
+\\
+&=
+\vecTwo {E+m} {p_x+i p_y}.
+}
+
+Given that they are equivalent, it may be better to use the form shown in \eqref{eq:bestuform} since it is in a form where one can take momenta to zero easily (i.e.~without neading to use L'Hopital's rule). 
+
+Putting in a normalisation factor
+\alig{
+u = k_u \vecTwo {E+m}{p_x + i p_y} 
+}%
+and requiring that $u^\dag u=2 E$ we can see that
+\alig{
+2E 
+&= 
+|k_u^2|  \vecTwo{E+m}{p_x + i p_y}  ^\dag \vecTwo{E+m}{p_x + i p_y} 
+\\
+&=
+|k_u^2|  \left((E+m)^2+p_x^2+p_y^2\right)
+\\
+&=
+|k_u^2|  \left(E^2+2 E m+m^2+p_x^2+p_y^2\right)
+\\
+&=
+|k_u^2|  \left(2 E m+2E^2\right)
+\\
+&=
+2E |k_u^2|  \left(E+m\right)
+}%
+and hence
+\alig{
+k_u
+&=
+\frac{1}{\sqrt{E+m}}
+}%
+and so our normalised $u$-spinor takes the form
+\alig{
+u &= \frac{1}{\sqrt{E+m}} 
+\vecTwo {E+m}{p_x+ip_y}\label{eq:bestnormaizeduform}
+}%
+which is much nicer than following alternative which (though correct) is much more difficult to work with for particles moving slowly:
+\alig{
+u &= \frac 1 {\sqrt{E-m}} \vecTwo {p_x - i p_y} {E-m}.
+}(The second form would have resulted from using \eqref{eq:worstuform} instead of \eqref{eq:bestuform} as the starting point for the normalisation.)
+
+
+We can also check that our $u$-spinors have the eigenvalue expected from \eqref{eq:eu}.
+\alig{
+H_{\vec p} \ u &=
+\frac 1 {\sqrt{E-m}}\matTwoTwo 
+{m} {p_x-i p_y} 
+{p_x+i p_y} {-m}
+\vecTwo {p_x - i p_y} {E-m}
+\\
+&=
+\frac 1 {\sqrt{E-m}}\vecTwo
+{(p_x - i p_y)(m+(E-m))}
+{p_x^2+p_y^2+m^2-E m}
+\\
+&=
+\frac 1 {\sqrt{E-m}}\vecTwo
+{(p_x - i p_y)(+E)}
+{E^2-E m}
+\\
+&=E
+\frac 1 {\sqrt{E-m}}\vecTwo
+{p_x - i p_y}
+{E- m}
+\\
+&=E u
+\qquad\text{(Q.E.D.)}.
+}
+By comparing \eqref{eq:eu} and 
+\eqref{eq:ev} we can see that the $v$ solutions will be obtainable from the $u$ solutions by substituting $-E$ for $E$ and $-\vec p$ for $\vec p$ and hence
+\alig{
+v \propto \vecTwo {-p_x + i p_y} {-E-m} \propto \vecTwo {p_x - i p_y} {E+m}
+}
+or in normalised form:
+\alig{
+v = \frac{1}{\sqrt{E+m}}\vecTwo {p_x - i p_y} {E+m}.\label{eq:bestnormaizedvform}
+}
+For this solution:
+\alig{
+H_{\vec p} \ v &\propto
+%\frac 1 {\sqrt{E+m}}
+\matTwoTwo 
+{m} {p_x-i p_y} 
+{p_x+i p_y} {-m}
+\vecTwo {p_x - i p_y} {E+m}.\\
+&=
+%\frac 1 {\sqrt{E+m}}
+\vecTwo
+{(p_x - i p_y)(m+(E+m))}
+{p_x^2+p_y^2-Em - m^2}
+\\
+&=
+%\frac 1 {\sqrt{E+m}}
+\vecTwo
+{(p_x - i p_y)(E+2m))}
+{(p_x^2+p_y^2+m^2)-Em -2 m^2}
+\\
+&=
+%\frac 1 {\sqrt{E+m}}
+\vecTwo
+{(p_x - i p_y)(E+2m)}
+{E^2-Em-2m^2}
+\\
+&=
+\vecTwo
+%\frac 1 {\sqrt{E+m}}
+{(p_x - i p_y)(E+2m)}
+{E^2-m(E+2m)}
+}
+YUK!!!  For reasons seen below, should use $H_{-\vec p}$ instead.
+
+Here is reason:
+\alig{
+\hat H - i \partial_t
+&=
+\vec \alpha\cdot  \vec{\hat p} + \beta m- i \partial_t
+\\
+&=
+\vec \alpha\cdot  (-i\vec\partial)+ \beta m- i \partial_t
+\\
+&=
+\matTwoTwo
+{+m-i\partial_t}   {(-i\partial_x)-i(-i\partial_y)}
+{(-i\partial_x)+i(-i\partial_y)}     {-m-i\partial_t}
+\\
+&=
+\matTwoTwo
+{+m-i\partial_t}   {-i\partial_x-\partial_y}
+{-i\partial_x+\partial_y}     {-m-i\partial_t}
+}%
+so
+\alig{
+ i \partial_t-\hat H 
+&=
+\matTwoTwo
+{-m+i\partial_t}   {i\partial_x+\partial_y}
+{i\partial_x-\partial_y}     {m+i\partial_t}
+}%
+and so
+\alig{
+( i \partial_t-\hat H ) 
+\psi_u 
+&=
+( i \partial_t-\hat H )
+u e^{-i p_\mu x^\mu}
+\\
+&\propto
+\matTwoTwo
+{-m+i\partial_t}   {i\partial_x+\partial_y}
+{i\partial_x-\partial_y}     {m+i\partial_t}
+\vecTwo {p_x - i p_y} {E-m}
+e^{-iE t + i\vec p \cdot \vec x}
+\\
+&=
+\matTwoTwo
+{-m+i(-iE)}   {i(i p_x)+(i p_y)}
+{i(i p_x)-(i p_y)}     {m+i(-i E)}
+\vecTwo {p_x - i p_y} {E-m}
+e^{-iE t + i\vec p \cdot \vec x}
+\\
+&=
+\matTwoTwo
+{-m+E}   {- p_x+i p_y}
+{-p_x-i p_y}     {m+ E}
+\vecTwo {p_x - i p_y} {E-m}
+e^{-iE t + i\vec p \cdot \vec x}
+\\
+&=
+\vecTwo
+{(p_x-i p_y)((-m+E)+(-E+m)}
+{-p_x^2-p_y^2-m^2+E^2}
+e^{-iE t + i\vec p \cdot \vec x}
+\\
+&=
+\vecTwo 0 0
+}%
+while
+\alig{
+( i \partial_t-\hat H ) 
+\psi_v 
+&=
+( i \partial_t-\hat H )
+v e^{+i p_\mu x^\mu}
+\\
+&\propto
+\matTwoTwo
+{-m+i\partial_t}   {i\partial_x+\partial_y}
+{i\partial_x-\partial_y}     {m+i\partial_t}
+\vecTwo {p_x - i p_y} {E+m}
+e^{iE t - i\vec p \cdot \vec x}
+\\
+&=
+\matTwoTwo
+{-m+i(iE)}   {i(-ip_x)+(-ip_y)}
+{i(-ip_x)-(-ip_y)}     {m+i(iE)}
+\vecTwo {p_x - i p_y} {E+m}
+e^{iE t - i\vec p \cdot \vec x}
+\\
+&=
+\matTwoTwo
+{-m-E}   {p_x-ip_y}
+{p_x+ip_y}     {m-E}
+\vecTwo {p_x - i p_y} {E+m}
+e^{iE t - i\vec p \cdot \vec x}
+\\
+&=
+\vecTwo
+{(p_x-ip_y)((-m-E)+(E+m))}
+{p_x^2+p_y^2+m^2-E^2}
+e^{iE t - i\vec p \cdot \vec x}
+\\
+&=
+\vecTwo 0 0
+}%
+and so both $\psi_u$ and $\psi_v$ are valid solutions.  In showing that the above solutions work, we have not made use of any requirements that $E$ be positive, and indeed in all cases the proofs only require that $E^2=p_x^2+p_y^2+m^2$ and so work for any real $E$.  Presumably we could therefore use just the $u$ spinors, but remember to have both positive and negative $E$, or alternatively we could use only positive $E$ everywhere but use both $u$ and $v$ spinors.
+
+\subsubsection{Charge conjugation?} 
+
+Our Dirac equation was
+\alig{
+0
+&=  \left(i \gamma^\mu\partial_\mu - m \right)\psi
+}just as in $SO(3,1)$.  Lectures noted that if we replace
+\alig{\partial_\mu \rightarrow \partial_\mu + i e A_\mu}%
+then we can attempt to see what manipulations lead to charge conjugation of a spinor.  In lectures for $SO(3,1)$ we found that the charge conjugation operator was
+\alig{
+C : \psi \rightarrow \psi' = C \psi = i \gamma^2 \psi^*.\label{eq:chargeconjugationoperator}
+}%
+The argument used in lectures used $\gamma^2$ rather than some other gamma matrix because of the following special property of $\gamma^2$ which held in the particular representation which the lectures used:
+\alig{
+(\gamma^0)^* &= (\gamma^0)
+\\
+(\gamma^1)^* &= (\gamma^1)
+\\
+(\gamma^2)^* &= - (\gamma^2)
+\\
+(\gamma^3)^* &= (\gamma^3), \qquad\text{and}
+\\
+\gamma^2 (\gamma^\mu)^* &= -\gamma^\mu \gamma^2.\label{eq:sduhjhbdsd}
+}%
+The same argument will work again here if our three gammas satisfy the above relations too (ignoring the unnecessary $\gamma^3$). We can already see from \eqref{eq:conjourgam0},\eqref{eq:conjourgam1} and \eqref{eq:conjourgam2}  that the first three conditions above are satisfied in our rep.  The last constraint \eqref{eq:sduhjhbdsd} then follows from the first three together with the fact that dissimilar gamma matrices anticommute.
+We therefore conclude that even in $SO(3,1)$ the charge conjugation operator remains (for our choice of representation) exactly as shown in \eqref{eq:chargeconjugationoperator}.
+
+We therefore investigate:
+\alig{
+C \psi_u &= 
+i \gamma^2 \psi_u^*  
+\\
+&\propto 
+i \matTwoTwo 0 i i 0  \left(\vecTwo {p_x-i p_y} {E-m} e^{ -i p_\mu x^\mu}\right)^*  
+\\
+&= 
+\matTwoTwo 0 {-1} {-1} 0  \vecTwo {p_x+i p_y} {E-m} e^{ +i p_\mu x^\mu} 
+\\
+&= 
+  -\vecTwo {E-m}  {p_x+i p_y} e^{ +i p_\mu x^\mu} 
+\\
+&\propto
+  \frac{p_x -i p_y}{E-m}
+  \vecTwo {E-m}  {p_x+i p_y} e^{ +i p_\mu x^\mu} 
+\\
+&=
+  \vecTwo {p_x -i p_y}  {\frac{(p_x -i p_y)(p_x+i p_y)} {E-m} } e^{ +i p_\mu x^\mu} 
+\\
+&=
+  \vecTwo {p_x -i p_y}  {\frac{
+  p_x^2+p_y^2
+  } {E-m} } e^{ +i p_\mu x^\mu} 
+\\
+&=
+  \vecTwo {p_x -i p_y}  {\frac{
+  E^2-m^2
+  } {E-m} } e^{ +i p_\mu x^\mu} 
+\\
+&=
+  \vecTwo {p_x -i p_y}  {\frac{
+ (E-m)(E+m)
+  } {E-m} } e^{ +i p_\mu x^\mu} 
+\\
+&=
+  \vecTwo {p_x -i p_y}  {E+m} e^{ +i p_\mu x^\mu} 
+\\
+&\propto
+  \psi_v
+}%
+which shows us that the $u$ spinors are antiparticles of the $v$ spinors, and vice versa.
+
+\subsubsection{Angular momentum}
+In $SO(2,1)$ things cannot rotate about axes in the plane, but they can rotate about a vertical axis (i.e.~an in-plane rotation). Noting that we really want an analogue of the `angular-momentum-about-the-$z$-axis' operator of $SO(2,1)$ (i.e.~$(\vec{\hat r} \times \vec {\hat p})_z$) we might call our in-plane angular momentum operator $\hat L$ and define it as follows: \alig{\hat L = \hat x  \hat p_y - \hat y \hat p_x.}%
+We might then note that
+\alig{
+\com{\hat H}{\hat L}
+&=
+\com{
+\alpha_x {\hat p}_x +
+\alpha_y {\hat p}_y +
+\beta m
+}{\hat x \hat p_y - \hat y \hat p_x}
+\\
+&=
+\com{
+\alpha_x {\hat p}_x +
+\alpha_y {\hat p}_y
+}{\hat x \hat p_y - \hat y \hat p_x}
+\\
+&=
+\alpha_x\com{ {\hat p}_x }{\hat x  \hat p_y}
+-\alpha_x\com{ {\hat p}_x }{\hat y  \hat p_x}
++\alpha_y\com{ {\hat p}_y }{\hat x  \hat p_y}
+-\alpha_y\com{ {\hat p}_y }{\hat y  \hat p_x}
+\\
+&=
+\alpha_x\com{ {\hat p}_x }{\hat x  \hat p_y}
+-\alpha_y\com{ {\hat p}_y }{\hat y  \hat p_x}
+\\
+&=
+\alpha_x\hat x\com{ {\hat p}_x }{  \hat p_y}
++\alpha_x\com{ {\hat p}_x }{\hat x  }\hat p_y
+-\alpha_y\hat y\com{ {\hat p}_y }{  \hat p_x}
+-\alpha_y\com{ {\hat p}_y }{\hat y  }
+\hat p_x
+\\
+&=
+\alpha_x\com{ {\hat p}_x }{\hat x  }\hat p_y
+-\alpha_y\com{ {\hat p}_y }{\hat y  }
+\hat p_x
+\\
+&=
+\alpha_x(-i)\hat p_y
+-\alpha_y(-i)
+\hat p_x
+\\
+&=
+i\alpha_y
+\hat p_x
+-i\alpha_x\hat p_y
+}
+and that
+\alig{
+\com{\hat H}{\beta}
+&=\com{
+\alpha_x {\hat p}_x +
+\alpha_y {\hat p}_y +
+\beta m
+}{\beta}
+\\
+&=
+\com{
+\alpha_x {\hat p}_x +
+\alpha_y {\hat p}_y
+}{\beta} \label{eq:snoopy1}
+\\
+&=
+{\hat p}_x\com{
+\alpha_x}{\beta}
++
+{\hat p}_y\com{\alpha_y 
+}{\beta}
+\\
+&=
+{\hat p}_x
+(\alpha_x \beta - \beta \alpha_x)
++
+{\hat p}_y
+(\alpha_y \beta - \beta \alpha_y)
+}
+which \textbf{in our representation} leads to
+\alig{
+\com{\hat H}{\beta}
+&=
+\hat p_x (\sigma_1 \sigma_3 -\sigma_3 \sigma_1)
++
+\hat p_y (\sigma_2 \sigma_3 -\sigma_3 \sigma_2)
+\\
+&=
+\hat p_x (-i\sigma_2 -i\sigma_2)
++
+\hat p_y (i \sigma_1 +i\sigma_1)
+\\
+&=
+-2i\hat p_x \sigma_2 
++
+2 i \hat p_y \sigma_1 
+\\
+&=
+-2i\hat p_x \alpha_y 
++
+2 i \hat p_y \alpha_x 
+\\
+&=
+-2(i\alpha_y \hat p_x 
+-
+ i  \alpha_x\hat p_y )\label{eq:snoopy2}
+}%
+therefore
+\alig{
+\com{\hat H}{\hat L+\frac 1 2 \beta}
+&=0
+}%
+and so we can identify  
+\alig{
+\hat S&=\frac 1 2 \beta
+=\frac 1 2 \sigma_3=\frac 1 2 \matTwoTwo 1 0 0 {-1}
+}%
+as the operator which measures the intrinsic spin of our particles -- at least in our representation.
+
+From \eqref{eq:bestnormaizeduform} we see that
+\alig{
+\left.u\right|_{\vec p\rightarrow0}
+&=\vecTwo{\sqrt{2m}} 0
+}%
+has an eigenvalue of $\frac 1 2$ under $\hat S$, while from \eqref{eq:bestnormaizedvform} we see that
+\alig{
+\left.v\right|_{\vec p\rightarrow0}
+&=\vecTwo 0 {\sqrt{2m}} 
+}%
+has an eigenvalue of $-\frac 1 2$ under $\hat S$.  Our (stationary) particles and antiparticles therefore have appear to have opposite intrinsic spin. Having said this, the role of $p^\mu$ is reversed in $\psi_v$ relative to $\psi_u$ and therefore we ought to use $-\hat S$ when determining the spin of anti-particles (i.e.~$v$-spinors).
+Therefore, though our (stationary) particles and antiparticles appear to have intrinsic spin, it appears that it is always in a consistent direction. This appears to suggest that for stationary particles there is no spin-up and spin-down. There is just spin in a consistent direction. That seems strange (what would choose the direction?) and so there may be a mistake I have not spotted in my calculation. It will be important therefore to check if the candidates spot something I have missed.
+
+Is there a helicity-like quantity that can work for particles which are moving? It's not much use if we have something which is only valid for stationary particles!  
+
+
+
+If one defines an operator $\hat h$ as follows:
+\alig{
+\hat h =\frac 1 m \left(\alpha_x \hat p_x + \alpha_y \hat p_y\right)
+}
+then 
+\alig{
+\com{\hat H}{\hat h}
+&=
+\com{m \hat h+\beta m}{\hat h}
+\\
+&=
+m\com{\beta}{\hat h}
+\\
+&=
+\com{\beta}{m \hat h}
+\\
+&=
+\com{\beta}{\alpha_x \hat p_x + \alpha_y \hat p_y}
+\\
+&=
+2(i\alpha_y \hat p_x 
+-
+ i  \alpha_x\hat p_y )
+\qquad\text{(by \eqref{eq:snoopy1} and \eqref{eq:snoopy2}).}
+}
+Therefore,
+\alig{
+\com{\hat H}{ \hat L+(-\frac 1 2 \hat h)}=0
+}%
+and so we could potentially have identified $(-\frac 1 2 \hat h)$ with the intrinsic spin operator, if we had so desired.
+
+
+
+\subsubsection{Summary}
+We have two degrees of freedom in our spinors in the $SO(2,1)$ space -- they represent having a particle and an antiparticle. There is no analog of the `spin' degrees of freedom (i.e.~spin-up or spin-down). Perhaps we can pseudo-justify that result post-facto by saying that spin in the direction of motion (in a 2D plane) is not possible to imagine, so no helicy-like concept can exist when spacetime has 2+1 dimensions.  Still, one can imagine the possibility of in-plane spin (in either direction) so one wonders whether something related to it is present in our theory. 
+
+\endanswer

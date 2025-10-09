@@ -1,0 +1,372 @@
+
+\question 
+Experimentally, leptonic decays of charged pions are seen to involve muons far more frequently than electrons:
+$$
+\frac{\Gamma\left[\pi^-\rightarrow e^- {\bar\nu}_e\right]}{\Gamma\left[\pi^-\rightarrow \mu^- {\bar\nu}_\mu\right]} \approx (1.3\pm 0.1)\times 10^{-4}.
+$$
+\begin{allparts}
+\part
+Why are lepton currents of the form
+$\bar\Psi\gamma^\mu\Phi$  and $\bar\Psi\gamma^\mu \gamma^5\Phi$  called vector and axial currents, respectively?\marks{2}
+\answer
+
+Because they transform as vectors or pseudovectors, respectively, under Lorentz boosts.
+\endanswer 
+\part
+What parts of the weak interaction are termed `maximally parity violating', and why?\marks{1}
+\answer
+
+The $V-A$ coupling of the $W$-boson (to anything) SM is called maximally violating.
+\endanswer
+\part
+Explain how the weak interaction's `vector minus axial' coupling  can explain the aforementioned observation concerning charged pion decay rates.\shorthint{You are not expected to numerically re-derive the actual value of the ratio given in the question -- you may simply outline the key issues.}\marks{4} % Does "structure of the argument" read better?
+\answer
+
+This is standard bookwork which requires the students to show that they know that (i) the spin-zero nature of the pion necessitates the emitted electron and anti-neutrino to both have the same helicity (in the pion centre of mass frame), and (ii) the (effective) masslessness of the anti-neutrino forces it (as an anti-particle) to be right-handed as (iii) in the massless regime chiral and helicity states coincide, and (iv) this forces the electron (or muon) to come out as right-handed too -- something they would prefer not to do (as particles) but can, as they are not massless, with the higher muon mass making this easier for it than for the electron.
+\endanswer
+\part
+Why would a `vector plus axial' variant of the weak interaction make the same quantitative prediction for the pion decay rates? \marks{1}
+\answer
+
+Changing from $V-A$ to $V+A$ would mean that the weak interaction would couple to left-handed anti-paricles and right-handed particles .... so although the helicity of all particles would be reversed, there would still be the same tension between  the helicity which the electron/muon would 'prefer' to have, versus what they have to have given the anti-neutrino. 
+\endanswer
+\part
+Derive predictions for the ratio $\frac{\Gamma\left[\pi^-\rightarrow e^- {\bar\nu}_e\right]}{\Gamma\left[\pi^-\rightarrow \mu^- {\bar\nu}_\mu\right]}$ which would apply if it were the case that the weak interaction instead had currents of the form $\bar\Psi\Phi$ (or, if you prefer, $\bar\Psi\gamma^5\Phi$). Leave your answer in terms of the parameters $m_e$, $m_\mu$, $m_\pi$ and quantities derived from them. No marks are available for a numerical estimate of the ratio, only the functional form is desired.
+%\begin{subparts}
+%\subpart
+%$\bar\Psi\Phi$, and
+%\subpart
+%$\bar\Psi\gamma^5\Phi$.\end{subparts}
+\marks{10}
+\answer
+
+Generically it is the case for spinors with polar angle $\theta$ and $c=\cos{\frac \theta 2}$, $s=\sin {\frac \theta 2}$ and $N=\sqrt{E+m}$ that:
+$$
+u_\uparrow =N\vecFour {c} {\expi s} {\fra c} {\fra \expi s},
+u_\downarrow=N\vecFour {-s} {\expi c} {\fra s} {-\fra \expi c},
+v_\uparrow =N\vecFour {\fra s} {-\fra \expi c} {-s} {\expi c},
+v_\downarrow=N\vecFour {\fra c} {\fra \expi s} {c} {\expi s}.
+$$
+However, if we consider just the $\pi\rightarrow e^-\bar \nu_e$ process (rather than its charge conjugate) then the $v$-spinors (i.e. antiparticle spinors) in our currents will always concern the neutrinos, and they are (i) effectively massess, and (ii) will leave back to back with the charged fermion.  These two considerations mean that we may parameterise things exclusively in terms of the polar angle $\theta$ of the charged fermion provided that in our $v$-spinors we (i) set $\fra\rightarrow 1$ and (ii) set $s\rightarrow c$, $c\rightarrow s$, $\expi\rightarrow -\expi$.  This means that having done so our  spinor library becomes:
+\alig{
+u_\uparrow(e^-) =\sqrt{E+m}\vecFour {c} {\expi s} {\fra c} {\fra \expi s},
+u_\downarrow(e^-)=\sqrt{E+m}\vecFour {-s} {\expi c} {\fra s} {-\fra \expi c},}
+\alig{
+v_\uparrow(\bar\nu_e) =\sqrt{|\vec p|}\vecFour {c} {\expi s} {-c} {-\expi s},
+v_\downarrow(\bar\nu_e)=\sqrt{|\vec p|}\vecFour {s} {-\expi c} {s} {-\expi c},
+}
+Furthermore
+\alig{
+\bar\Psi\Phi 
+&= 
+(\Psi^*_1,\Psi^*_2,\Psi^*_3,\Psi^*_4)\matTwoTwo I 0 0 {-I} \vecFour 
+{\Phi_1}
+{\Phi_2}
+{\Phi_3}
+{\Phi_4}
+\\
+&=
+\Psi^*_1 \Phi_1
++
+\Psi^*_2 \Phi_2
+-
+\Psi^*_3 \Phi_3
+-
+\Psi^*_4 \Phi_4
+}%and
+%\alig{
+%\bar\Psi\gamma^5\Phi 
+%&= 
+%(\Psi^*_1,\Psi^*_2,\Psi^*_3,\Psi^*_4)\matTwoTwo I 0 0 {-I} \matTwoTwo 0 I I 0\vecFour 
+%{\Phi_1}
+%{\Phi_2}
+%{\Phi_3}
+%{\Phi_4}
+%\\
+%&=
+%\Psi^*_1 \Phi_3
+%+
+%\Psi^*_2 \Phi_4
+%-
+%\Psi^*_3 \Phi_1
+%-
+%\Psi^*_4 \Phi_2
+%}%
+%and so
+%\alig{
+%{\bar u}_\uparrow u_\uparrow
+%&=
+%c^2+s^2-\left(\fra\right)^2 (c^2+s^2)
+%\\
+%&=
+%1-(\fra)^2
+%\\&=\frac{(E+m)^2-|\vec p|^2}{(E+m)^2}
+%\\&=\frac{2m^2+2Em}{(E+m)^2}
+%\\&=\frac{2m(E+m)}{(E+m)^2}
+%\\&=\frac{2m}{E+m}
+%}
+and so if $E$ and $\vec p$ are the energy and momentum of the charged fermion, then defining $K=\sqrt{E+m}{\sqrt{|\vec p|}}$ we see that
+\alig{
+{\bar u_\uparrow(f^-)} v_\downarrow(\bar \nu)
+&=
+K[(cs)+(-cs)] -K\left[\left(cs\fra\right)+\left(-cs\fra\right)\right]=0,
+}%
+%
+\alig{
+{\bar u_\uparrow(f^-)} v_\uparrow(\bar \nu)
+&=
+K\left[c^2+s^2\right] -K\left[-c^2\fra-s^2\fra\right]%\\
+%&
+=K\left(1+\fra\right),
+}%
+%
+\alig{
+{\bar u_\downarrow(f^-)} v_\uparrow(\bar \nu)
+&=
+K\left[-sc+sc\right] -K\left[-sc\fra+sc\fra\right]=0,\quad\text{and}
+}%
+%
+\alig{
+{\bar u_\downarrow(f^-)} v_\downarrow(\bar \nu)
+&=
+K[-s^2-c^2] -K\left[s^2\fra+c^2\fra\right]=-K\left(1+\fra
+\right)}%
+and we see that since $v_\uparrow(\bar \nu)$  and $v_\downarrow(\bar \nu)$ have (respectively) eigenvalues $-1$ and $+1$ under $\gamma^ 5=\matTwoTwo0 I I 0$, the $\bar \Psi \gamma^5 \Phi$ currents will be the same as those of $\bar \Psi  \Phi$ except for an overall sign change in to two expressions in which $v_\uparrow(\bar \nu)$ is used.  Therefore:
+\alig{
+{\bar u_\uparrow(f^-)}
+\gamma^5 v_\downarrow(\bar \nu)
+&=
+{\bar u_\uparrow(f^-)} v_\downarrow(\bar \nu)=0,
+}%
+%
+\alig{
+{\bar u_\uparrow(f^-)}
+\gamma^5 v_\uparrow(\bar \nu)
+&=
+-{\bar u_\uparrow(f^-)} v_\uparrow(\bar \nu)
+=-K\left(1+\fra\right),
+}%
+%
+\alig{
+{\bar u_\downarrow(f^-)}
+\gamma^5 v_\uparrow(\bar \nu)
+&=
+-{\bar u_\downarrow(f^-)} v_\uparrow(\bar \nu)
+=0,\quad\text{and}
+}%
+%
+\alig{
+{\bar u_\downarrow(f^-)}
+\gamma^5 v_\downarrow(\bar \nu)
+&=
+{\bar u_\downarrow(f^-)} v_\downarrow(\bar \nu)
+=-K\left(1+\fra\right).
+}%
+Hence, in all cases:
+\alig{
+\frac{\Gamma\left[\pi^-\rightarrow e^- {\bar\nu}_e\right]}{\Gamma\left[\pi^-\rightarrow \mu^- {\bar\nu}_\mu\right]} 
+&=
+\frac
+{K_e^2\left(1+\frac{|\vec p_e  |}{E_e  +m_e  }\right)^2}
+{K_\mu^2\left(1+\frac{|\vec p_\mu|}{E_\mu+m_\mu}\right)^2}
+\cdot
+\frac{
+|\vec p_e|
+}
+{
+|\vec p_\mu|
+}\label{eq:firstattemptatrat}
+}%
+in which the first contribution (up to the dot) comes from the ratio of the squares of the matrix elements, while the second contribution (after the dot) comes from the phase space $|\vec p^*|$ term in \alig{
+\Gamma = \frac{|\vec p^*|}{32 \pi^2 m^2}\int|M|^2d\Omega
+\nonumber} given in the hint. Using our definition of $K$ to simplify  \eqref{eq:firstattemptatrat} we see that:
+\alig{
+\frac{\Gamma\left[\pi^-\rightarrow e^- {\bar\nu}_e\right]}{\Gamma\left[\pi^-\rightarrow \mu^- {\bar\nu}_\mu\right]} 
+&=
+\frac
+{(E_e+m_e) |\vec p_e|\left(1+\frac{|\vec p_e  |}{E_e  +m_e  }\right)^2}
+{(E_\mu+m_\mu) |\vec p_\mu|\left(1+\frac{|\vec p_\mu|}{E_\mu+m_\mu}\right)^2}
+\cdot
+\frac{
+|\vec p_e|
+}
+{
+|\vec p_\mu|
+}
+\\
+&=
+\frac
+{(E_e+m_e) \left(1+\frac{|\vec p_e  |}{E_e  +m_e  }\right)^2}
+{(E_\mu+m_\mu) \left(1+\frac{|\vec p_\mu|}{E_\mu+m_\mu}\right)^2}
+\cdot
+\frac{
+|\vec p_e|^2
+}
+{
+|\vec p_\mu|^2
+}
+\\
+&=
+\frac
+{2\left(E_e+|\vec p_e  |\right)}
+{2\left(E_\mu+|\vec p_\mu  |\right)}
+\cdot
+\frac{
+|\vec p_e|^2
+}
+{
+|\vec p_\mu|^2
+}
+\\
+&=
+\frac
+{2m_\pi}
+{2m_\pi}
+\cdot
+\frac{
+|\vec p_e|^2
+}
+{
+|\vec p_\mu|^2
+}
+\\
+&=
+\frac{
+|\vec p_e|^2
+}
+{
+|\vec p_\mu|^2.
+}
+}%
+%
+%
+Using $m_\pi = 139.5$~MeV, $m_\mu = 105.7$~MeV and $m_e = 0.510$~MeV.
+From $m_\pi=\sqrt{m^2+p^2} + p$ we get that $p_e=69.7491$~MeV and $p_\mu=29.7052$~MeV and so
+$$\frac{
+|\vec p_e|^2
+}{
+|\vec p_\mu|^2
+}\approx 5.51.
+$$ 
+We note also that  $E_e=69.7509$~ MeV and $E_\mu=109.795$~MeV.
+%, resulting in 
+%$$
+%\frac
+%{\left(1+\frac{|\vec p_e  |}{E_e  +m_e  }\right)^2}
+%{\left(1+\frac{|\vec p_\mu|}{E_\mu+m_\mu}\right)^2}
+%\approx
+%3.07.
+%$$% 
+
+\noindent
+[Aside: There are two reasons that this question asks the students to derive the dependence of the ratio on the relevant parameters. The first is that it allows the examiner to see what understanding they have of the physics involved, which is of course the purpose of the exam. The other reason is that a numerical value of 5.5 was given in the lecture notes for the overall ratio, i.e.~for $\frac{\Gamma\left[\pi^-\rightarrow e^- {\bar\nu}_e\right]}{\Gamma\left[\pi^-\rightarrow \mu^- {\bar\nu}_\mu\right]}$, though no working was supplied.  Since this exam is supposed to be able to function in an open-book like way, I don't want to give marks to people for just quoting a number they may have read from or memorised from lecture notes without any understanding. By deliberately not giving people the mass of the pion and the electron, I am actively trying to prevent/discourage candidates who might consider cheating (by opening their lecture notes) from being able to compare whether their functional form is or is not compatible with the numerical answer given in the lecture notes.  I want to see and award credit for the nature of the computation that the candidate performs, or the physics argument they make. I don't want to give them credit for remembering values they saw quoted on some slide somewhere.  End of Aside]   
+\endanswer
+\end{allparts}
+Putting the weak interaction entirely to one side, and focusing only on QCD, suppose now that the $u$, $d$ and $s$ quarks existed with all their usual quantum numbers,
+except that they had spin zero.  
+\begin{allparts}
+\part
+Discuss the resulting spectrum of hadrons and their properties.  You should specifically consider the possible 
+%$J^{PC}$ 
+$J^{P}$ 
+values of the meson multiplets,
+and the $J^P$ value and multiplicity of the lightest baryon multiplet, and whether or not the resulting spectra are compatible with those we see for normal (\textit{i.e.}~fermionic) quarks. \shorthint{Bosons have the same parity as antibosons.}\marks{12}
+
+
+%\questionlabel{qn:udsspinzero}
+
+\answer
+
+Since the colour quantum numbers of the quarks remain the same
+after the change from spin~$\frac 1 2$ to spin~0,
+the colour singlet states are still
+\[   \frac{1}{\sqrt{3}} (r\bar{r}+g\bar{g}+b\bar{b})
+            \qquad \text{and} \qquad
+     \frac{1}{\sqrt{6}}(rgb - grb + gbr - bgr + brg - rbg) ~. \]
+Hence we still expect to see {\em mesons} containing
+a quark and an antiquark and {\em baryons} containing three quarks.
+
+Mesons:
+
+Since the flavour quantum numbers of the quarks remain unchanged,
+%%and since the derivation flavour wavefunctions derived for mesons
+%%The do not depend on assumptions about the quark spin.
+the flavour wavefunctions for mesons retain their usual SU(3) form,
+and we expect to see the usual flavour nonets of particles.
+
+The overall parity of a two particle system in a state with
+orbital angular momentum $L$ is
+\[  P = P_1.P_2.(-1)^L ~. \]
+Spin~0 quarks would be bosons,
+so quarks and antiquarks would have the same intrinsic parity;
+$P_1=P_2$.
+Hence, for a meson:
+\[   P(q\bar q)=(-1)^L  ~.  \]
+For real mesons made of spin~$\frac 1 2$ quarks and antiquarks,
+charge conjugation is equivalent to a parity transformation
+followed by exchange of the spins of the two particles.
+For mesons made of spin~0 quarks, spin exchange is no longer relevant
+and charge conjugation and parity are therefore equivalent:
+\[   C(q \bar q)=P(q \bar q)=(-1)^L ~.  \]
+For real mesons, the overall spin is given by $J=L+S$
+where $L=0,1,2,\ldots$ and $S=0,1$.
+For mesons made of spin~0 quarks and antiquarks, we would have
+simply
+\[  J=L ~. \]
+Combining all the above,
+we would expect to find the following sequence of meson nonets:
+\begin{equation*}
+   \boxed{
+   %J^{PC} = 0^{++}, 1^{--}, 2^{++}, 3^{--}, \ldots \quad \text{nonets}
+   J^{P} = 0^{+}, 1^{-}, 2^{+}, 3^{-}, \ldots \quad \text{nonets}
+   }
+\end{equation*}
+(at odds with observation).
+
+Baryons:
+
+For real baryons, regarded as being
+built up from three identical spin~$\frac 1 2$ quarks
+with appropriate colour, spin and flavour quantum numbers,
+the overall wavefunction is
+\[  \psi = \psi(\text{colour}).\psi(\text{spin}).
+           \psi(\text{flavour}).\psi(\text{space}) ~. \]
+Since spin~$\frac 1 2$ quarks are fermions,
+$\psi$ must be totally antisymmetric under interchange of any
+pair of quarks within the baryon.
+
+For baryons made from spin~0 quarks, the wavefunction would become just
+\[  \psi = \psi(\text{colour}).
+           \psi(\text{flavour}).\psi(\text{space})  \]
+and the overall wavefunction $\psi$ would be totally {\em symmetric}
+under quark interchange since quarks are now bosons.
+
+For spin~0 quarks, the colour component of the wavefunction is the usual
+\[  \psi(\text{colour}) =
+     \frac{1}{\sqrt{6}}(rgb - grb + gbr - bgr + brg - rbg)  \]
+which is totally antisymmetric under interchange of any pair of
+quarks within the baryon.
+Hence,
+\[  \psi(\text{flavour}).\psi(\text{space})
+          \quad \text{must now be totally {\em antisymmetric}}  \]
+For $L=0$ baryons, $\psi$(space) is totally symmetric,
+so $\psi$(flavour) must be totally {\em antisymmetric}.
+But the only totally antisymmetric flavour wavefunction which can be
+constructed out of the three flavours u, d and s is
+\[  \psi(\text{space}) =
+      \frac{1}{\sqrt{6}} (uds - dus + dsu - sdu + sud - usd)  \]
+{\textit{i.e}}~we expect only a single baryon state, with the flavour content uds.
+This baryon must have parity $P=+1.+1.+1.(-1)^0=+1$ and total spin zero
+(since $L=0$ and $S=0$)
+giving a
+\begin{equation*}
+   \boxed{
+   J^P = 0^+ \quad \text{singlet}
+   }
+\end{equation*}
+as the lightest baryon multiplet (again at odds with observation).
+
+\endanswer
+
+
+\end{allparts}
