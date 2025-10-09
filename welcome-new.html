@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Part III Particle Physics Lectures Home Page</title>
+
+  <style>
+    /* Classic serif look, Cambridge deep blue accents */
+    :root{
+      --accent:#0b3d91; /* deep Cambridge blue */
+      --text:#111;
+      --lead:1.25; /* line-height multiplier */
+      --max-width:980px;
+      --gutter:20px;
+      --h-space:1.05rem;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      padding:0;
+      background:#fff;
+      color:var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:var(--lead);
+      font-size:18px; /* slightly larger for readability */
+    }
+
+    a { color: var(--accent); text-decoration: underline; }
+    a:visited { color: #2b4e9e; }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 28px auto;
+      padding: 0 var(--gutter) 48px;
+    }
+
+    header {
+      text-align:center;
+      margin-bottom: 18px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
+    /* Less shouty headings: preserve hierarchy but reduce size and weight */
+    h1 {
+      font-size:1.6rem;
+      margin: 0.15rem 0 0.35rem;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+      font-weight: 600;
+    }
+
+    h1.sub {
+      font-size:1.4rem;
+    }
+
+    h2 {
+      font-size:1.125rem;
+      margin:1.1rem 0 0.45rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size:1rem;
+      margin:0.6rem 0 0.4rem;
+      font-weight: 600;
+      color: #222;
+    }
+
+    h4 {
+      font-size:0.95rem;
+      margin:0.6rem 0 0.35rem;
+      font-weight:600;
+    }
+
+    p, li {
+      margin:0.35rem 0;
+      font-size:1rem;
+    }
+
+    /* Lists spacing */
+    ul { margin:0.45rem 0 0.9rem 1.2rem; padding:0; }
+    li ul { margin-top:0.35rem; margin-bottom:0.35rem; }
+
+    /* Make the top title lines slightly separated and centred (as before) */
+    .title-lines { margin-bottom: 8px; }
+
+    /* Content block styling (keeps it minimal/classic) */
+    .content { margin-top:8px; }
+
+    /* Make links inside headings look like headings but keep underline */
+    h2 a { color: var(--accent); text-decoration: none; }
+    h2 a:hover { text-decoration: underline; }
+
+    /* Responsive adjustments */
+    @media (max-width:720px){
+      body { font-size:16px; }
+      h1 { font-size:1.35rem; }
+      h1.sub { font-size:1.15rem; }
+      h2 { font-size:1.02rem; }
+      .page { margin:18px 14px; padding-bottom:28px; }
+    }
+
+    /* Small print/notes (if any) */
+    .muted { color: #444; font-size:0.95rem; }
+
+    /* Keep images modestly sized if any present */
+    img { max-width:100%; height:auto; display:inline-block; }
+
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="title-lines">
+        <h1>Part III Particle Physics</h1>
+        <h1 class="sub">Major Option</h1>
+      </div>
+
+      <h2 style="margin-top:0;"><a href="http://www.hep.phy.cam.ac.uk/~lester">Dr Lester</a></h2>
+
+      <h3>Michaelmas 2025</h3>
+    </header>
+
+    <main class="content">
+
+      <h2>Lecture Slides / Handouts </h2>
+      <p>
+        Slides: <a href="handouts2025/hand.pdf">as lectured</a> rather than printed. Online-only, with appendices. Updated with corrections where stated in the list below.<br>
+        <br>
+        Slides: <a href="handouts2025/hand-appendices-deleted-two-up.pdf">as printed at the start of term</a>, not as lectured.  Never corrected!.<br>
+      </p>
+
+      <h4>Supplements to Lecture Slides / Handouts</h4>
+      <p>
+        Non-examinable <a href="handouts2025/appendices.pdf">Appendices</a> (online-only not printed).<br>
+        Non-examinable <a href="Propagators2024.pdf">propagator supplement</a> to handout 3.<br>
+        <a href="handouts2023/H07_supplement_flavour.pdf">
+        Hand sketched notes
+        </a> on 
+        SU(2) vs SU(3) comparison, and general SU(3) multiplets. See also the Particle Data Group's <a href="https://pdg.lbl.gov/2010/reviews/rpp2010-rev-young-diagrams.pdf">professional printed summary of SU(n) multiplet properties</a>.
+      </p>
+
+      <p><a href="examples/examples_2025.pdf"><h2 style="display:inline-block; margin:0; padding:0;">Examples sheet 2025</h2></a></p>
+
+      <h2><a href="exams/index.html">Past tripos papers (including worked solutions)</a></h2>
+
+      <h2>Clarifications and Corrections to printed version of the 2025 handout:</h2>
+
+      <ul>
+        <li>Slide 11: Third bullet point (containing third run of dots) should end "so mass" (not energy) "is GeV/c^2".  [Fixed online]</li>
+        <li></li>
+      </ul>
+
+      <h2>Demonstrating/Supervision arrangements for 2025:</h2>
+      <p>
+        Instructions to appear here soon.
+      </p>
+<!--
+      <h2>Books</h2>
+      <p>
+        There is one book with a notable connection to this course: <a href="http://www.cambridge.org/ae/academic/subjects/physics/particle-physics-and-nuclear-physics/modern-particle-physics">"Modern Particle Physics"</a> by <a href="http://www.hep.phy.cam.ac.uk/~thomson/">Prof Mark Thomson</a> of The Cavendish.  I draw your attention to this book as Prof Thomson lectured this very course in 2008, 2009, 2010 and 2011 (before I took over in 2012).  He revised the course substantially over that time, and the course you see now is substantially the same as it was when he left it.  His book was his attempt to turn the course into a publication, and as such, there ought not to be a book more closely related to this course than it.  
+      </p>
+-->
+
+      <h2>Ephemera</h2>
+      <ul>
+        <li>Link to the <a href="https://pdg.lbl.gov/">Particle Data Group</a>'s review  of <a href="https://pdg.lbl.gov/2023/reviews/rpp2023-rev-cpt-invariance-tests.pdf">CPT Invariance Tests in Neutral Kaon Decay</a>.</li>
+        <li><a href="https://www.youtube.com/watch?v=keOn0TYTfOw">GROSSER PREIS VON DEUTSCHLAND Trabrennen Hamburg</a></li>
+        <li><a href="anglepoise_chairs_usa15_cern.jpg">Anglepoise chairs in USA15, LHC Point 1, CERN</a></li>
+        <li>Full 2022 handout, but with 2022 bugs and features, can be found on the <a href="welcome-2022.html">2022 course webpage</a>.</li>
+        <li><a href="https://www.youtube.com/watch?v=1e1eLe1ihT0">Cernettes performing &quot;Collider&quot;</a>, and <a href="https://en.wikipedia.org/wiki/Les_Horribles_Cernettes">the first ever photo on the web</a>.</li> 
+        <li><a href="https://www.hep.phy.cam.ac.uk/~lester/higgs-simulator/index.html">New (2021) Yukawa Higgs Mechanism Simulator</a>.</li>
+        <li>Old (2015) <a href="WavesOnStringsLagrangian.jpg">WavesOnStringsLagrangian</a> relating to <a href="https://bitbucket.org/kesterlester/higgsmechanismsimulator">this Higgs mechanism simulator</a> which is launchable <a href="https://www.hep.phy.cam.ac.uk/~lester/java/moo.jnlp">here</a>.</li>
+        <li><a href="https://arxiv.org/abs/1904.11195">Search for Non-Standard Sources of Parity Violation in Jets at s√=8 TeV with CMS Open Data</a>.</li>
+        <li><a href="https://arxiv.org/pdf/math-ph/0510065.pdf">Second most important result ever to come out of CERN</a>.</li>
+        <li><a href="LHBPents.pdf">My LHCb 2015+2019 pentaquarks summary</a>.</li>
+        <li><a href="http://arxiv.org/pdf/1904.03947.pdf">LHCb 2019 pentaquarks paper</a>.</li>
+        <li><a href="http://arxiv.org/pdf/1507.03414.pdf">LHCb 2015 pentaquarks paper</a>.</li>
+        <li><a href="http://www-pdg.lbl.gov/2016/listings/rpp2016-list-t-quark.pdf">2016 PDG entry for Top Quark mass</a>. (Or browse via: PDG, particle listigs, quarks, quarks , t quark)</li>
+        <li><a href="LHC_Earthquake.png">Christchurch Earthquake, 2016, New Zealand, as seen by the LHC</a>.</li>
+        <li><a href="https://www.youtube.com/watch?v=cDkGUnqLXUk">Gauge transformation on a railway line</a>.</li>
+        <li><a href="DavyEscapePictures/index.html">Never Lubricate the Davy</a>.</li>
+        <li><a href="DiracGown.html">Prof Dirac's gown</a>.</li>
+        <li><a href="http://arxiv.org/pdf/1304.4741v1.pdf">BS - BSbar mixing</a>.</li>
+        <li><a href="Multiplets_Zain_Ibrahim_Siddiqi.pdf">Revision notes on multiplets</a> from a past student of the course (Zain_Ibrahim_Siddiqi, zis24) uploaded with permission.</li>
+        <li>ATLAS Higgs Discovery paper: 
+          <ul>
+            <li>via <a href="http://dx.doi.org/10.1126/science.1232005">doi:10.1126/science.1232005</a> (N.B.: the DOI link is pretty badly managed by the Journal. Almost useless!)</li>
+            <li> Also <a href="http://cds.cern.ch/record/1511050/files/Science-2012--1576-82.pdf?version=1">PDF (without author list) from CDS</a> as part of CDS record <a href="https://cds.cern.ch/record/1511050">1511050</a>.</li>
+            <li> Or in <a href="https://inspirehep.net/literature/1223730">inspire</a>.</li>
+            <li>  Citation: Science 338 (2012) [issue 6114] 1576-1582.</li>
+            <li>Supplemental information no longer acessible? (<a href="http://science.sciencemag.org/content/sci/suppl/2012/12/19/338.6114.1576.DC1/Ciocio-SOM.pdf">author list PDF from journal (journal link partially broken !)</a></li>
+            <li>?Fragile? direct link to paper WITH author list at journal  <a href="https://www.science.org/doi/pdf/10.1126/science.1232005">maybe</a>? [OK - journal links keep breaking so here is a <a href="science.1232005.pdf">local cache with author list</a>]</li>
+            <li>?Fragile? <a href="https://atlas-glance.cern.ch/atlas/analysis/papers/details?id=2962">atlas glance internal link</a></li>
+          </ul>
+        </li>
+        <li>Constraints on <a href="http://arxiv.org/abs/1303.7367">Heffalon</a> production at the LHC.</li>
+        <li>Heffalon resources <a href="http://www.hep.phy.cam.ac.uk/~lester/heffalon/index.html">elsewhere</a> on the web.</li>
+        <li>Dirac discovers another <a href="https://twitter.com/michael_nielsen/status/1295716442977865728">attractive force</a>.</li>
+        <li>The moodle link for the course is <a href="https://www.vle.cam.ac.uk/course/view.php?id=253163">here</a> but it is not currently used for anything.</li>
+        <li>
+          <a href="welcome-2022.html">2022 version of course</a>.
+        </li>
+        <li>A <a href="http://www.hep.phy.cam.ac.uk/~lester/EightfoldPetrarchan.pdf">failed attempt</a> to win <a href="http://www.oriel.ox.ac.uk/">Oriel College</a>'s "<a href="http://www.oriel.ox.ac.uk/content/eugene-lee-hamilton-poetry-competition">Eugene Lee-Hamilton Prize</a>".  The Provost and Fellows of Oriel College offer a prize of £60 for the best <a href="http://en.wikipedia.org/wiki/Petrarchan_sonnet">Petrarchan Sonnet</a> in English submitted by an undergraduate of Oxford or Cambridge, on a subject to be chosen by the candidate.  Enjambment between the eighth and ninth lines will be permitted.  Some past entries from students on this course: 
+          <ul>
+            <li>2024:
+              <ul>
+                <li><b>&ldquo;<a href="2024_Teodor_Maslyankov.html">A Sonnet about Helicity and Chirality</a>&rdquo;</b>, by Teodor Maslyankov</li>
+                <li><b>&ldquo;<a href="2024_Toby_Nuttall.html">shmoonino</a>&rdquo;</b>, by Toby Nuttall</li>
+                <li><b>&ldquo;<a href="2024_Darina_Andriychenko.html">A Part III&apos;s Plea</a>&rdquo;</b>, by Darina Andriychenko</li>
+                <li><b>&ldquo;<a href="2024_Isaac_Marchant.pdf">Game of Six (or More)</a>&rdquo;</b>, by Isaac A. Marchant [This sonnet was "highly commended" by Oriel and published in the Oriel Record!]</li>
+              </ul>
+            </li>
+            <li>2023:
+              <ul>
+                <li><b>&ldquo;<a href="2023_Ella_Wood_2.html">Alice's Adventures in Collider-land</a>&rdquo;</b>, by Ella Wood</li>
+                <li><b>&ldquo;<a href="2023_Ella_Wood_1.html">Ode to Experimental Particle Physics</a>&rdquo;</b>, by Ella Wood</li>
+                <li><b>&ldquo;<a href="2023_Asad_Naqvi.html">Vigil of the Distant Stars</a>&rdquo;</b>, by Asad Naqvi</li>
+                <li><b>&ldquo;<a href="2023_Benjamin_Gladwyn.pdf">A Hedge Fund Manager&lsquo;s Lament</a>&rdquo;</b>, by Benjamin Gladwyn</li>
+                <li><b>&ldquo;<a href="2023_Fred_Gillard.html">To Hear Her Song</a>&rdquo;</b>, by Fred Gillard</li>
+                <li><b>&ldquo;<a href="2023_Patrick_Collins.html">Wisdom is Meaningless</a>&rdquo;</b>, by Patrick Collins</li>
+                <li>[Possibly one that I have lost?]</li>
+                <li><b>&ldquo;<a href="2023_Vivian_Perez.html">Ode to the letter &lsquo;k&rsquo;</a>&rdquo;</b>, by Vivian Perez</li>
+                <li><b>&ldquo;<a href="2023_Yuchen_Yang.html">A 20 billion euro collider</a>&rdquo;</b>, by Yuchen Yang</li>
+                <li><b>&ldquo;<a href="2023_Felicity_Ibrahim.jpg">A sonnet for Chris Lester</a>&rdquo;</b>, by Felicity Ibrahim</li>
+              </ul>
+            </li>
+            <li>2022:
+              <ul>
+                <li><b>&ldquo;<a href="2022_SamReynolds.html">In the world of the very small</a>&rdquo;</b>, by Sam Reynolds</li>
+              </ul>
+            </li>
+            <li>2021:
+              <ul>
+                <li><b>&ldquo;<a href="2022_OdeMarch2022FromPartIVs.pdf">Ode to the Cavendish</a>&rdquo;</b>, by Aaron Smith and Elle Wyatt (first entry from Part IVs!)</li>
+              </ul>
+            </li>
+            <li>2020:
+              <ul>
+                <li><b>&ldquo;<a href="2020_Aaron_Smith.html">Most cows don't have Facebook</a>&rdquo;</b>, by Aaron Smith, Hannah Horton, and Elle Wyatt,</li>
+                <li><b>&ldquo;<a href="2020_Richard_Williams.html">One Strange Day</a>&rdquo;</b>, by Richard Williams</li>
+              </ul>
+            </li>
+            <li>2017:
+              <ul>
+                <li><b>&ldquo;<a href="2017_Olivia_Morley.html">Understanding Particle Physics</a>&rdquo;</b>, by Olivia Morley</li>
+              </ul>
+            </li>
+            <li>2016:
+              <ul>
+                <li><b><a href="2016_GeorgeBarton.html">Coda, a sonnet</a></b>, by George Barton</li>
+              </ul>
+            </li>
+            <li>2015:
+              <ul>
+                <li><b><a href="2015_AlexHowes.html">A sonnet</a></b>, by Alex Howes</li>
+                <li><b><a href="2015_SonnetHerschelChawdhry.pdf">Neutrino Oscillation Grant Application Sonnet</a></b>, by Herschel Chawdhry</li>
+              </ul>
+            </li>
+            <li>2013:
+              <ul>
+                <li><b>&ldquo;<a href="2013_Stefano_De-Nicola.html">Solo et pensoso, quantizzava campi</a>&rdquo;</b>, by Stefano De-Nicloa</li>
+                <li><b>[<a href="2013_Raza_Habib_rh496.html">Currently untitled</a>]</b>, by Raza Habib</li>
+                <li><b>&ldquo;<a href="2013_Will_Benfold_wjb42.html">Anthropic Principles</a>&rdquo;</b>, by Will Benfold</li>
+                <li><b>&ldquo;<a href="2013_Matthew_Lim_ml577.html">Susy's Swansong</a>&rdquo;</b>, by Matthew Lim</li>
+                <li><b>&ldquo;<a href="2013_Jay_Man_jm769.html">Bonnet Sonnet</a>&rdquo;</b>, by Jay Man (actually this isn't the sonnet, which is secret, it's the instruction not to publish the sonnet!)</li>
+              </ul>
+            </li>
+            <li><b><a href="http://www.hep.phy.cam.ac.uk/~lester/EightfoldPetrarchan.pdf">Dr Lester's entry on Pseudoscalar Mesons</a> (2012?)</li>
+          </ul>
+        </li>
+
+        <li><a href="http://www.davidparker.com/janine/">Particle physics sonnet from 1981</a></li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
+
