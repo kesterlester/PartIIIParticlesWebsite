@@ -1,0 +1,84 @@
+
+
+
+                     Particle Physics Major Option
+                     -----------------------------
+
+                          Michaelmas 2005
+
+
+Lecture 1:  Introduction, Klein-Gordon, Dirac up to end of 2.3
+
+Lecture 2:  Continue with Dirac equation, up to end of 2.7
+              (skimmed over Dirac sea and discovery of positron.)
+              (bit rushed near the end.)
+
+Lecture 3:  Finished Dirac eqn (antiparticles and chirality);
+            then Dirac delta func and transition rates, up to middle of 3.2.
+              (only had a few minutes available for the non-examinable stuff
+               at the end of handout 2).
+              (didn't show any of the powerpoint stuff on helicity/chirality/g-2).
+
+Lecture 4:  Finished handout 3 (decay rates and cross sections).
+              (laptop disaster - wouldn't talk to projector)
+
+Lecture 5:  QED Feynman rules, and e+e- --> mu+mu-.
+
+Lecture 6:  e-mu- scattering by crossing.  Then e-p scattering and form factors
+            up to Rosenbluth formula and interpretation of GE and GM as FTs.
+
+Lecture 7:  Finished proton and neutron form factors.  Then DIS (kinematics,
+            Bjorken scaling, Callan-Gross) up to start of parton model.
+
+Lecture 8:  Parton model, scaling violations, HERA.  Slightly rushed.
+
+Lecture 9:  Finished DIS (Higgs at LHC).  Then symmetries and isospin up to Pauli matrices.
+
+Lecture 10: Finished SU(2). Then SU(3) flavour. Then SU(3) colour up to colour confinement.
+
+Lecture 11: Hadrons, QCD Feynman rules, colour forces (handout 6), hadron-hadron scattering.
+            First two transparencies on colour potentials.
+
+Lecture 12: Long-range QCD potential, running couplings, P and C.
+            Then parity violation up to V-A Feynman rule.
+
+Lecture 13: Consequences of, and evidence for, V-A (skipped Goldhaber).  Then neutrino
+            scattering, up to DIS and start of parton model (just began 7.6).
+
+Lecture 14: Finished neutrino DIS (didn't bother going through handout 7.7 Appendix).
+            Then neutral kaons up to but not including strangeness oscillations. 
+
+Lecture 15: Strangeness oscillations, discovery of CP violation, pipi decays, semileptonic
+            charge asymmetry. Ended with aliens, but skipping till next lecture the algebra
+            in handout 8.6.
+
+Lecture 16: Finished CP violation in neutral kaons.  Then CKM up to measurement of first two rows.
+
+Lecture 17: Finished CKM, then unitarity triangle and sin(2beta).  Went through all the
+            powerpoint slides first, and then outlined handout 8.8-8.12 until time ran out.
+
+Lecture 18: QED, gauge theories (skipping handout 9), electroweak unification,
+            then W decay (handout 10).
+
+Lecture 19: Z decay and Higgs boson "theory". "How to build a SM". Then Z resonance theory
+            up to handout 11.2.3
+
+Lecture 20: Finished handout 11.  Then precision electroweak tests. Skipped Higgs search at LEP.
+             (skipped rapidly through the LEP2 plots to catch up time)
+            Then Reines+Cowan experiment.
+
+Lecture 21: Discovery of nu-mu. Solar neutrinos, including handout 12.1, up to but not including MSW
+
+Lecture 22: Last 2-3 slides of solar neutrinos.
+            Then reactor and atmospheric neutrino expts (interspersed with coupled pendulum demo).
+             [gave them 5 minutes at start to fill in questionnaires].
+
+Lecture 23: PMNS matrix and neutrino masses, but only skimming quickly through handout 12.2.
+            Then GUTS, up to hierarchy problem.
+
+Lecture 24: Finished GUTS.  Then SUSY, LHC, baryogenesis. 
+
+
+
+
+

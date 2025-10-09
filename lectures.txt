@@ -1,0 +1,132 @@
+[CGL notes that these are notes from Batley (probably) or else perhaps Mark.]
+
+Lecture 1:
+==========
+o Introduction : finished introduction - basically OK perhaps add diagrams
+                 for u,s,t 
+  Rates        : to bottom of page 22. Improve discussion of Delta function 
+                 Add 4pi p^2 shell but basically OK
+Lecture 2: 
+========== 
+o Rates : good upto end of decays. 
+          Cross-section stuff rushed, cross-section picture va+vb took too
+          long.  
+          p.35 confusing 
+          Didn't have time to go through p.36/37
+Lecture 3: 
+========== 
+o Dirac : started 10 minutes late due to data projector  problems
+          Upto 65. no real problems although a few typos. 
+Lecture 4: 
+========== 
+o Dirac : finsihed in just about right amount of time. C and P not 100 %
+          clear, otherwise pretty good.
+
+Lecture 5: 
+========== 
+o Particle Exchange : Just right - timing perfect.
+
+
+Lecture 6: 
+========== 
+o Electron-Positron : Just right (upto p.135), examples on board worked well:
+                           writing down ME
+                           evaluation of psi gamma^1 phi
+
+Lecture 7: 
+========== 
+o Electron-Positron/E-P : Just right (upto p.156).
+                            Good place to end but Rutherford was a bit
+                                rushed and needs beefing up in handouts.
+
+Lecture 8: 
+========== 
+o E-P/DIS : Pretty good - took structure functions/form factors nice and
+                           slowly (upto p.173). Could have improved
+                           Mott "derivation" - connect to early currents (c) 
+                           and (s)
+
+
+Lecture 9: 
+========== 
+o E-P/DIS : Pretty good - few suggested improvements noted on handouts.
+                          Ended at 188 a few minutes early - could expand
+                          some material.
+
+
+Lecture 10:
+========== 
+o DIS/Quark: DIS went well as did first slides on symmetries. Finished
+             to bottom p.206
+
+Lecture 11:
+========== 
+o Quark: to bottom p.228. OK - a bit dull... need more careful explanation
+           when introducing SU(3) - could be better organised
+
+Lecture 12:
+========== 
+o Quark/QCD to page 251. First 10 minutes without data projector !
+                         Basically pretty good. Need to restructure 
+                         slightly + DO EXAMPLE OF qxq ON BOARD
+
+Lecture 13:
+========== 
+o QCD to page 271. Dull ! Colour factors OK - but rest a little flat
+              
+Lecture 14:
+========== 
+o QCD/V-A to page 288. QCD OK, rho stuff a bit superfluous. V-A pretty
+                       good apart from parity. Need to better explain
+                       parity violation in Co decay. 
+
+Lecture 15:
+========== 
+o V-A/Weak Lept to page 306. 0900 lecture - didn't read through thouroughly
+                             enough. V-A good. Leptonic weak - muon decay
+                             dull...
+
+Lecture 16:
+========== 
+o Weak Lept to page 326.     Off to Valencia - can't remember how this went.
+
+
+Lecture 17:
+========== 
+o Weak Lept/Nu Osc to page 350. End of Weak a bit rushed + could be better
+                                  explained. Nu Osc went well.
+
+Lecture 18:
+========== 
+o Nu Osc from page 350-369. Not too bad - derivations could be handled better.
+                            SuperK atmos - need to mention resolution more
+                            explicitely + MUST SHOW L vs CosTheta
+
+
+
+Lecture 19: Neutrinos            : Thurs 16th 
+o Nu Osc from page 370. Finished 5 minutes early ! Pretty good. A bit
+                            repetetive.
+
+Lecture 20: CKM/CP               : Sat   18th
+                to end of 414. Went pretty well - CP stuff good. CKM a bit dull
+         
+Lecture 21: CP                   : Tues  21st
+               to end. Good but too rushed. Need to be clearer about 
+               relation between neutral kaon states from the outset.
+               Also need to better explain how data plots indication
+               CP/Dm etc.               
+
+Lecture 22: EW/W                 : Thurs 23th 
+               Not bad. W worked reasonably. Gauge worked well. EW unification
+                 needs to be made clearer. Skimmed through Z decays. Next
+                 year move Z decay to start of lecture 23. 
+
+Lecture 23: Z                    : Sat   25th
+               Not bad. Got to start of ALR. Introduce connection to
+               sin^2\theta before launching into AFB? Think about
+               showing determinations of couplind...    
+
+Lecture 24: Z+H                  : Tues  28th
+
+
